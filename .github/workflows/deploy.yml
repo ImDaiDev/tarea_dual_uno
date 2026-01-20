@@ -1,0 +1,17 @@
+name: "Desplegar automaticamente"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: actualizar-pagina
+        uses: actions/checkout@v4
+
+      - name: enviar-mensaje
+        run: echo "Actualizando pagina"
