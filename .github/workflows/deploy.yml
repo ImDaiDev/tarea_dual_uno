@@ -12,6 +12,3 @@ jobs:
     steps:
       - name: actualizar-pagina
         uses: actions/checkout@v4
-
-      - name: enviar-mensaje
-        run: echo "Actualizando pagina"
